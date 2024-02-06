@@ -40,7 +40,7 @@ where = ["src"]
 exclude = ["tests"]
 
 [tool.setuptools.package-data]
-"*" = ["py.typed"]
+"python_package" = ["py.typed"]
 
 [tool.pylint.MAIN]
 py-version = "3.11"
