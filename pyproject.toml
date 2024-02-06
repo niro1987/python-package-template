@@ -39,6 +39,9 @@ include-package-data = true
 where = ["src"]
 exclude = ["tests"]
 
+[tool.setuptools.package-data]
+"*" = ["py.typed"]
+
 [tool.pylint.MAIN]
 py-version = "3.11"
 ignore = ["tests"]
