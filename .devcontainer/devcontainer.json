@@ -1,13 +1,8 @@
 {
   "name": "Python Package Devcontainer",
   "build": {
-    // Sets the run context to one level up instead of the .devcontainer folder.
     "context": "..",
-    // Update the 'dockerFile' property if you aren't using the standard 'Dockerfile' filename.
     "dockerfile": "./Dockerfile"
-  },
-  "features": {
-    "ghcr.io/devcontainers-contrib/features/pre-commit": "latest"
   },
   "customizations": {
     "vscode": {
@@ -42,5 +37,6 @@
         "github.vscode-github-actions"
       ]
     }
-  }
+  },
+  "postCreateCommand": "pre-commit install --install-hooks"
 }
