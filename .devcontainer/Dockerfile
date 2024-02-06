@@ -6,3 +6,5 @@ COPY requirements.txt requirements.txt
 COPY .devcontainer/requirements-dev.txt requirements-dev.txt
 RUN python -m pip install -r requirements.txt -r requirements-dev.txt \
     && rm requirements.txt requirements-dev.txt
+
+RUN git init . && pre-commit install --install-hooks

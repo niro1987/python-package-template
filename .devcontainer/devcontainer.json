@@ -42,6 +42,5 @@
         "github.vscode-github-actions"
       ]
     }
-  },
-  "postCreateCommand": "pre-commit install --install-hooks"
+  }
 }
